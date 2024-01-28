@@ -1,0 +1,7 @@
+D:\Semester 2\Labs\OOP lab\Lab 2\leetcodeproblem\leetcodeproblem\bin\Debug\leetcodeproblem.exe.config
+D:\Semester 2\Labs\OOP lab\Lab 2\leetcodeproblem\leetcodeproblem\bin\Debug\leetcodeproblem.exe
+D:\Semester 2\Labs\OOP lab\Lab 2\leetcodeproblem\leetcodeproblem\bin\Debug\leetcodeproblem.pdb
+D:\Semester 2\Labs\OOP lab\Lab 2\leetcodeproblem\leetcodeproblem\obj\Debug\leetcodeproblem.csproj.AssemblyReference.cache
+D:\Semester 2\Labs\OOP lab\Lab 2\leetcodeproblem\leetcodeproblem\obj\Debug\leetcodeproblem.csproj.CoreCompileInputs.cache
+D:\Semester 2\Labs\OOP lab\Lab 2\leetcodeproblem\leetcodeproblem\obj\Debug\leetcodeproblem.exe
+D:\Semester 2\Labs\OOP lab\Lab 2\leetcodeproblem\leetcodeproblem\obj\Debug\leetcodeproblem.pdb
