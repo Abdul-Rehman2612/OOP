@@ -1,0 +1,14 @@
+D:\Semester 2\OOP\OOP Lab\Lab 1\Student Management System\Student Management System\bin\Debug\Student Management System.exe.config
+D:\Semester 2\OOP\OOP Lab\Lab 1\Student Management System\Student Management System\bin\Debug\Student Management System.exe
+D:\Semester 2\OOP\OOP Lab\Lab 1\Student Management System\Student Management System\bin\Debug\Student Management System.pdb
+D:\Semester 2\OOP\OOP Lab\Lab 1\Student Management System\Student Management System\obj\Debug\Student Management System.csproj.AssemblyReference.cache
+D:\Semester 2\OOP\OOP Lab\Lab 1\Student Management System\Student Management System\obj\Debug\Student Management System.csproj.CoreCompileInputs.cache
+D:\Semester 2\OOP\OOP Lab\Lab 1\Student Management System\Student Management System\obj\Debug\Student Management System.exe
+D:\Semester 2\OOP\OOP Lab\Lab 1\Student Management System\Student Management System\obj\Debug\Student Management System.pdb
+D:\Semester 2\OOP\OOP Lab\Lab 2\Student Management System\Student Management System\bin\Debug\Student Management System.exe.config
+D:\Semester 2\OOP\OOP Lab\Lab 2\Student Management System\Student Management System\bin\Debug\Student Management System.exe
+D:\Semester 2\OOP\OOP Lab\Lab 2\Student Management System\Student Management System\bin\Debug\Student Management System.pdb
+D:\Semester 2\OOP\OOP Lab\Lab 2\Student Management System\Student Management System\obj\Debug\Student Management System.csproj.AssemblyReference.cache
+D:\Semester 2\OOP\OOP Lab\Lab 2\Student Management System\Student Management System\obj\Debug\Student Management System.csproj.CoreCompileInputs.cache
+D:\Semester 2\OOP\OOP Lab\Lab 2\Student Management System\Student Management System\obj\Debug\Student Management System.exe
+D:\Semester 2\OOP\OOP Lab\Lab 2\Student Management System\Student Management System\obj\Debug\Student Management System.pdb

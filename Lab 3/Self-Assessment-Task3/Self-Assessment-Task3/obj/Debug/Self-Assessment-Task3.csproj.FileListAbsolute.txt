@@ -1,0 +1,7 @@
+D:\Semester 2\OOP\OOP Lab\Lab 3\Self-Assessment-Task3\Self-Assessment-Task3\obj\Debug\Self-Assessment-Task3.csproj.AssemblyReference.cache
+D:\Semester 2\OOP\OOP Lab\Lab 3\Self-Assessment-Task3\Self-Assessment-Task3\obj\Debug\Self-Assessment-Task3.csproj.CoreCompileInputs.cache
+D:\Semester 2\OOP\OOP Lab\Lab 3\Self-Assessment-Task3\Self-Assessment-Task3\bin\Debug\Self-Assessment-Task3.exe.config
+D:\Semester 2\OOP\OOP Lab\Lab 3\Self-Assessment-Task3\Self-Assessment-Task3\bin\Debug\Self-Assessment-Task3.exe
+D:\Semester 2\OOP\OOP Lab\Lab 3\Self-Assessment-Task3\Self-Assessment-Task3\bin\Debug\Self-Assessment-Task3.pdb
+D:\Semester 2\OOP\OOP Lab\Lab 3\Self-Assessment-Task3\Self-Assessment-Task3\obj\Debug\Self-Assessment-Task3.exe
+D:\Semester 2\OOP\OOP Lab\Lab 3\Self-Assessment-Task3\Self-Assessment-Task3\obj\Debug\Self-Assessment-Task3.pdb
