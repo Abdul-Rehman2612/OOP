@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Threading;
+using BA1.data;
 
 
 namespace BussinessApp
@@ -25,10 +28,7 @@ namespace BussinessApp
             int[] passengerTicketPrice = new int[1000];         // price of the ticket booked by the passenger
 
             // Employees data
-            string[] employeeName = new string[100];       // name of each employee
-            string[] employeeID = new string[100];         // usernames for each emmployee
-            string[] employeeIDPassword = new string[100]; // passwords for each employee
-            string[] employeeCnic = new string[100];       // cnic for each employee
+            List<Employee> employees = new List<Employee>();
             int employeeCountIdx = 0;                      // number of employees who have been added
 
             // Train details
@@ -52,7 +52,7 @@ namespace BussinessApp
 
             // load data files for passengers,employees and trains
             PassengersDataLoad(passengerName, passengerID, passengerIDPassword, passengerCnic, passengerTicketStatus, passengerTrainNo, passengerTicketRoute, passengerArrivalCity, passengerDepartureCity, passengerTicketPrice,ref passengerCountIdx);
-            EmployeeDataLoad(employeeName, employeeID, employeeIDPassword, employeeCnic,ref employeeCountIdx);
+            EmployeeDataLoad(employees);
             TrainsDataLoad(trainNo, trainRoute, trainArrivalCity, trainDepartureCity, trainTicketPrice,ref trainCountIdx);
 
             // Headers
@@ -105,8 +105,8 @@ namespace BussinessApp
 
                                 if (validation == true) // if passenger uses correct password format
                                 {
-                                    string userCnicSU = UserCnicSignup(passengerCnic, employeeCnic, passengerCountIdx, employeeCountIdx, 26);                // cnic for signing up
-                                    bool cnicCheck = UserCnicValidationSignup(userCnicSU, passengerCnic, employeeCnic, passengerCountIdx, employeeCountIdx); // checks if cnic is valid
+                                    string userCnicSU = UserCnicSignup(passengerCnic, employees, passengerCountIdx, 26);                // cnic for signing up
+                                    bool cnicCheck = UserCnicValidationSignup(userCnicSU, passengerCnic, employees, passengerCountIdx); // checks if cnic is valid
 
                                     if (cnicCheck == true) // if cnic is correct and is not already found
                                     {
@@ -139,7 +139,7 @@ namespace BussinessApp
                     HeaderCls();
                     SignInHeader();
 
-                    string userIDSI = UserIDSignIn(passengerID, employeeID, passengerCountIdx, employeeCountIdx); // userID for signing in
+                    string userIDSI = UserIDSignIn(passengerID, employees, passengerCountIdx); // userID for signing in
 
                     if (userIDSI == "admin") // if userID is admin
                     {
@@ -171,7 +171,7 @@ namespace BussinessApp
                                             PrintSubHeader(headerNames[0]);
 
                                             // add an employee data
-                                            AddEmployeeData(employeeName, employeeID, employeeIDPassword, employeeCnic, passengerCnic, ref employeeCountIdx, passengerCountIdx);
+                                            AddEmployeeData(employees, passengerCnic, passengerCountIdx);
                                         }
                                         else if (choice == "2") // if admin wants to delete employee enters 2
                                         {
@@ -181,12 +181,12 @@ namespace BussinessApp
                                             int x = employeeCountIdx; // saves employee count temporarily
 
                                             // delete an employee data
-                                            DeleteUserData(employeeName, employeeID, employeeIDPassword, employeeCnic, "Employee", ref employeeCountIdx);
+                                            EmpDeleteUserData(employees);
 
                                             if (x != employeeCountIdx) // if employee data is deleted
                                             {
                                                 // employee file is updated
-                                                EmployeesDataUpdateFile(employeeName, employeeID, employeeIDPassword, employeeCnic, employeeCountIdx);
+                                                EmployeesDataUpdateFile(employees);
                                             }
                                         }
                                         else if (choice == "3") // if admin wants to update employee enters 3
@@ -195,10 +195,10 @@ namespace BussinessApp
                                             PrintSubHeader(headerNames[2]);
 
                                             // update an employee data
-                                            UpdateUserData(employeeName, employeeID, employeeIDPassword, employeeCnic, passengerCnic, "Employee", employeeCountIdx, passengerCountIdx);
+                                            EmpUpdateUserData(passengerCnic, employees, passengerCountIdx);
 
                                             // updates employee data file after the employee data is updated
-                                            EmployeesDataUpdateFile(employeeName, employeeID, employeeIDPassword, employeeCnic, employeeCountIdx);
+                                            EmployeesDataUpdateFile(employees);
                                         }
                                         else if (choice == "4") // if admin wants to view employee enters 4
                                         {
@@ -206,7 +206,7 @@ namespace BussinessApp
                                             PrintSubHeader(headerNames[3]);
 
                                             // displays all employees data
-                                            ViewUserDataList(employeeName, employeeID, employeeIDPassword, employeeCnic, "Employee", employeeCountIdx);
+                                            EmpViewUserDataList(employees);
                                         }
                                         else if (choice == "5") // if admin wants to search an employee enters 5
                                         {
@@ -214,7 +214,7 @@ namespace BussinessApp
                                             PrintSubHeader(headerNames[4]);
 
                                             // searches employee data for employeeID entered by admin
-                                            SearchUserData(employeeName, employeeID, employeeIDPassword, employeeCnic, "Employee", employeeCountIdx);
+                                            EmpSearchUserData(employees);
                                         }
                                         else if (choice == "6") // if admin wants to go back enters 6
                                         {
@@ -245,7 +245,7 @@ namespace BussinessApp
                                             int x = passengerCountIdx;
 
                                             // adds a passenger
-                                            AddPassengerData( passengerName, passengerID, passengerIDPassword, passengerCnic, employeeCnic, ref passengerCountIdx, employeeCountIdx);
+                                            AddPassengerData( passengerName, passengerID, passengerIDPassword, passengerCnic, employees, ref passengerCountIdx);
 
                                             if (x != passengerCountIdx) // if passsenger added successfully the file is updated
                                             {
@@ -305,7 +305,7 @@ namespace BussinessApp
                                             PrintSubHeader(headerNames[7]);
 
                                             // update a passenger data
-                                            UpdateUserData(passengerName, passengerID, passengerIDPassword, passengerCnic, employeeCnic, "Passenger", passengerCountIdx, employeeCountIdx);
+                                            UpdateUserData(passengerName, passengerID, passengerIDPassword, passengerCnic, employees, "Passenger", passengerCountIdx);
 
                                             // updates the passenger file after data is updated
                                             PassengersDataUpdateFile(passengerName, passengerID, passengerIDPassword, passengerCnic, passengerTicketStatus, passengerTrainNo, passengerTicketRoute, passengerArrivalCity, passengerDepartureCity, passengerTicketPrice, passengerCountIdx);
@@ -514,7 +514,7 @@ namespace BussinessApp
                     }
                     else // if user is employee or a passenger
                     {
-                        bool x = UserCheckSignIn(userIDSI, passengerID, employeeID, passengerCountIdx, employeeCountIdx); // checks if userID exists or not
+                        bool x = UserCheckSignIn(userIDSI, passengerID, employees, passengerCountIdx); // checks if userID exists or not
 
                         if (x == true) // if userID is found in data
                         {
@@ -522,10 +522,10 @@ namespace BussinessApp
 
                             if (role == "Employee") // if role of user is Employee
                             {
-                                int empIdx = IndexCheck(userIDSI, employeeID, employeeCountIdx);       // employee index for ID
-                                string empPasswordSI = UserPasswordSignIn(employeeIDPassword[empIdx]); // taskes input for password
+                                int empIdx = EmpIndexCheck(userIDSI, employees);       // employee index for ID
+                                string empPasswordSI = UserPasswordSignIn(employees[empIdx].employeeIDPassword); // taskes input for password
 
-                                if (empPasswordSI == employeeIDPassword[empIdx]) // if employee enters correct password
+                                if (empPasswordSI == employees[empIdx].employeeIDPassword) // if employee enters correct password
                                 {
                                     // loop terminates if employee enters 5
                                     while (true)
@@ -554,7 +554,7 @@ namespace BussinessApp
                                                     int m = passengerCountIdx;
 
                                                     // adds a passenger
-                                                    AddPassengerData(passengerName, passengerID, passengerIDPassword, passengerCnic, employeeCnic, ref passengerCountIdx, employeeCountIdx);
+                                                    AddPassengerData(passengerName, passengerID, passengerIDPassword, passengerCnic, employees, ref passengerCountIdx);
 
                                                     if (m != passengerCountIdx) // if passsenger added successfully the file is updated
                                                     {
@@ -614,7 +614,7 @@ namespace BussinessApp
                                                     PrintSubHeader(headerNames[7]);
 
                                                     // update a passenger data
-                                                    UpdateUserData(passengerName, passengerID, passengerIDPassword, passengerCnic, employeeCnic, "Passenger", passengerCountIdx, employeeCountIdx);
+                                                    UpdateUserData(passengerName, passengerID, passengerIDPassword, passengerCnic, employees, "Passenger", passengerCountIdx);
 
                                                     // updates the passneger file after its data is updated
                                                     PassengersDataUpdateFile(passengerName, passengerID, passengerIDPassword, passengerCnic, passengerTicketStatus, passengerTrainNo, passengerTicketRoute, passengerArrivalCity, passengerDepartureCity, passengerTicketPrice, passengerCountIdx);
@@ -804,7 +804,7 @@ namespace BussinessApp
                                             PrintSubHeader(headerNames[16]);
 
                                             // displays the data of the employee signed in
-                                            ViewUserData(employeeName, employeeID, employeeIDPassword, employeeCnic, empIdx, 50, 24);
+                                            EmpViewUserData(employees, empIdx, 50, 24);
                                             PressAnyKey(50, 29);
                                         }
                                         else if (choice == "5") // if employee wants to change password enters 5
@@ -813,12 +813,12 @@ namespace BussinessApp
                                             PrintSubHeader(headerNames[19]);
 
                                             // changes the password
-                                            string newPassword = ChangePassword(employeeIDPassword, empIdx);
+                                            string newPassword = EmpChangePassword(employees, empIdx);
 
                                             if (newPassword != " ")
                                             {
                                                 // employee file is updated
-                                                EmployeesDataUpdateFile(employeeName, employeeID, employeeIDPassword, employeeCnic, employeeCountIdx);
+                                                EmployeesDataUpdateFile(employees);
                                             }
                                         }
                                         else if (choice == "6") // if employee wants to log out enters 6
@@ -1363,7 +1363,7 @@ namespace BussinessApp
                 return false;
             }
         }
-        static string UserCnicSignup(string[] passengerCnic, string[] employeeCnic, int passengerCountIdx, int employeeCountIdx, int y)
+        static string UserCnicSignup(string[] passengerCnic, List<Employee> employees, int passengerCountIdx, int y)
         {
             NoteSUcnic(); // prints the instructions for user cnic
 
@@ -1382,7 +1382,7 @@ namespace BussinessApp
                     PrintLine("Invalid Cnic! Enter again: ",50,y);
                     cnic = Inputs();
                 }
-                if (UserCnicValidationSignup(cnic, passengerCnic, employeeCnic, passengerCountIdx, employeeCountIdx) == true)
+                if (UserCnicValidationSignup(cnic, passengerCnic, employees, passengerCountIdx) == true)
                 {
                     break;
                 }
@@ -1392,7 +1392,7 @@ namespace BussinessApp
 
             return cnic;
         }
-        static bool UserCnicValidationSignup(string cnic, string[] passengerCnic, string[] employeeCnic, int passengerCountIdx, int employeeCountIdx)
+        static bool UserCnicValidationSignup(string cnic, string[] passengerCnic, List<Employee> employees, int passengerCountIdx)
         {
             bool cnicCheck = true;
             //  checks if user cnic consists of only 13 numbers else returns false
@@ -1423,9 +1423,9 @@ namespace BussinessApp
                     }
                     if (cnicCheck == true)
                     {
-                        for (int c = 0; c < employeeCountIdx; c++)
+                        for (int c = 0; c < employees.Count; c++)
                         {
-                            if (cnic == employeeCnic[c])
+                            if (cnic == employees[c].employeeCnic)
                             {
                                 cnicCheck = false;
                                 break;
@@ -1459,14 +1459,14 @@ namespace BussinessApp
         }
 
         // user sign in functions
-        static string UserIDSignIn(string[] passengerID, string[] employeeID, int passengerCountIdx, int employeeCountIDx)
+        static string UserIDSignIn(string[] passengerID, List<Employee> employees, int passengerCountIdx)
         {
             string ID="";
 
             for (int i = 0; i < 3; i++)
             {
                 ID = UserIDInput(i, 23);
-                if (UserCheckSignIn(ID, passengerID, employeeID, passengerCountIdx, employeeCountIDx) == true || ID == "admin")
+                if (UserCheckSignIn(ID, passengerID, employees, passengerCountIdx) == true || ID == "admin")
                 {
                     break;
                 }
@@ -1474,13 +1474,21 @@ namespace BussinessApp
 
             return ID;
         }
-        static bool UserCheckSignIn(string ID, string[] passengerID, string[] employeeID, int passengerCountIdx, int employeeCountIdx)
+        static bool UserCheckSignIn(string ID, string[] passengerID, List<Employee> employees, int passengerCountIdx)
         {
             bool check;
 
             if (ID[0] == 'e' && ID[1] == 'm' && ID[2] == 'p')
             {
-                check = UserCheck(ID, employeeID, employeeCountIdx);
+                check = EmployeeIDCheck(ID, employees);
+                if(check==false)
+                {
+                    check=true;
+                }
+                else
+                {
+                    check=false;
+                }
             }
             else
             {
@@ -1551,6 +1559,19 @@ namespace BussinessApp
             }
             return index;
         }
+        static int EmpIndexCheck(string ID, List<Employee> employees)
+        {
+            int index = -1;
+            for (int idx = 0; idx < employees.Count; idx++)
+            {
+                if (ID == employees[idx].employeeID)
+                {
+                    index = idx;
+                    break;
+                }
+            }
+            return index;
+        }
         static string UserPasswordSignIn(string idPassword)
         {
             string password="";
@@ -1578,21 +1599,15 @@ namespace BussinessApp
         }
 
         // add employee functions
-        static void AddEmployeeData(string[] employeeName, string[] employeeID, string[] employeeIDPassword, string[] employeeCnic, string[] passengerCnic,ref int employeeCountIdx, int passengerCountIdx)
+        static void AddEmployeeData(List<Employee> employees, string[] passengerCnic, int passengerCountIdx)
         {
-            if (employeeCountIdx == 100)
-            {
-                PrintStatement("Sorry Employee cannot be added!", 50, 24, "W");
-            }
-            else
-            {
                 string empNamein = UserNameSignUp(23);                  // name of employee
                 bool empNameCheck = UserNameValidationCheck(empNamein); // checks if name entered is valid
 
                 if (empNameCheck == true)
                 {
-                    string empIdin = EmpUserIDInput(employeeID, employeeCountIdx);            // username of employee ID
-                    bool empIDCheck = EmployeeIDCheck(empIdin, employeeID, employeeCountIdx); // if employee ID already exists return true otherwise false
+                    string empIdin = EmpUserIDInput(employees);            // username of employee ID
+                    bool empIDCheck = EmployeeIDCheck(empIdin, employees); // if employee ID already exists return true otherwise false
 
                     if (empIDCheck == true) // if employee ID already exists or wrong input
                     {
@@ -1605,17 +1620,17 @@ namespace BussinessApp
 
                         if (passValidation == true) // if admin uses correct password format for employee ID
                         {
-                            string empCnicin = UserCnicSignup(passengerCnic, employeeCnic, passengerCountIdx, employeeCountIdx, 26);                // cnic of employee
-                            bool cnicCheck = UserCnicValidationSignup(empCnicin, passengerCnic, employeeCnic, passengerCountIdx, employeeCountIdx); // checks if employee cnic is valid
+                            string empCnicin = UserCnicSignup(passengerCnic, employees, passengerCountIdx, 26);                // cnic of employee
+                            bool cnicCheck = UserCnicValidationSignup(empCnicin, passengerCnic, employees, passengerCountIdx); // checks if employee cnic is valid
 
                             if (cnicCheck == true) // if employee cnic is correct
                             {
                                 // saving info of the emoloyee
-                                SaveSUInformation(empNamein, employeeName, empIdin, employeeID, empPasswordin, employeeIDPassword, empCnicin, employeeCnic,ref employeeCountIdx);
-
+                                Employee emp = new Employee(empNamein, empIdin, empPasswordin, empCnicin);
+                                employees.Add(emp);
                                 PrintStatement("Employee added successfully!", 50, 27, " ");
                                 // saving data in file
-                                EmployeesNewDataFile(employeeName, employeeID, employeeIDPassword, employeeCnic, employeeCountIdx);
+                                EmployeesNewDataFile(employees);
                             }
                             else // if employee cnic was not correct
                             {
@@ -1631,10 +1646,10 @@ namespace BussinessApp
                 else
                 {
                     PrintStatement("Invalid Name format. Failed to add employee!", 50, 24, "W");
-                }
-            }
+                
+                }   
         }
-        static string EmpUserIDInput(string[] employeeID, int employeeCountIdx)
+        static string EmpUserIDInput(List<Employee> employees)
         {
             NoteAddEmployee();
 
@@ -1643,7 +1658,7 @@ namespace BussinessApp
             for (int i = 0; i < 3; i++)
             {
                 userName = UserIDInput(i, 24);
-                if (EmployeeIDCheck(userName, employeeID, employeeCountIdx) == false)
+                if (EmployeeIDCheck(userName, employees) == false)
                 {
                     break;
                 }
@@ -1653,7 +1668,7 @@ namespace BussinessApp
 
             return userName;
         }
-        static bool EmployeeIDCheck(string empIDin, string[] employeeID, int employeeCountIdx)
+        static bool EmployeeIDCheck(string empIDin, List<Employee> employees)
         {
             bool check = false;
 
@@ -1672,7 +1687,7 @@ namespace BussinessApp
                 {
                     if ((empIDin[0] == 'e' && empIDin[1] == 'm' && empIDin[2] == 'p') && empIDin != "admin")
                     {
-                        check = UserCheck(empIDin, employeeID, employeeCountIdx);
+                        check = EmpUserCheck(empIDin, employees);
                     }
                     else
                     {
@@ -1687,9 +1702,23 @@ namespace BussinessApp
 
             return check;
         }
+        static bool EmpUserCheck(string ID, List<Employee> employees)
+        {
+            bool x = false;
 
+            for (int idx = 0; idx < employees.Count; idx++)
+            {
+                if (ID == employees[idx].employeeID)
+                {
+                    x = true;
+                    break;
+                }
+            }
+
+            return x;
+        }
         // add passenger ID functions
-        static void AddPassengerData(string[] passengerName, string[] passengerID, string[] passengerIDPassword, string[] passengerCnic, string[] employeeCnic,ref int passengerCountIdx, int employeeCountIdx)
+        static void AddPassengerData(string[] passengerName, string[] passengerID, string[] passengerIDPassword, string[] passengerCnic,List<Employee> employees,ref int passengerCountIdx)
         {
             if (passengerCountIdx == 1000) // if username space not available
             {
@@ -1716,8 +1745,8 @@ namespace BussinessApp
 
                         if (validation == true) // if passenger uses correct password format
                         {
-                            string userCnicSU = UserCnicSignup(passengerCnic, employeeCnic, passengerCountIdx, employeeCountIdx, 26);                // cnic for signing up
-                            bool cnicCheck = UserCnicValidationSignup(userCnicSU, passengerCnic, employeeCnic, passengerCountIdx, employeeCountIdx); // checks if cnic is valid
+                            string userCnicSU = UserCnicSignup(passengerCnic, employees, passengerCountIdx,26);                // cnic for signing up
+                            bool cnicCheck = UserCnicValidationSignup(userCnicSU, passengerCnic, employees, passengerCountIdx); // checks if cnic is valid
 
                             if (cnicCheck == true) // if cnic is correct
                             {
@@ -1773,6 +1802,34 @@ namespace BussinessApp
                 PressAnyKey(50, 26);
             }
         }
+        static void EmpDeleteUserData(List<Employee> employees)
+        {
+            PrintLine("Enter employeeID: ", 50, 23);
+            string ID = Inputs();
+
+            if (EmpUserCheck(ID, employees) == true)
+            {
+                int idx = EmpIndexCheck(ID, employees);
+
+                EmpViewUserData(employees, idx, 50, 25);
+                string option = YesNoChoice("employee");
+
+                if (option == "1" || option == "Yes")
+                {
+                    employees.RemoveAt(idx);
+                    PrintStatement("Employee data deleted successfully!", 50, 33, " ");
+                }
+                else if (option == "2" || option == "No")
+                {
+                    PrintStatement("Employee data not deleted!", 50, 33, " ");
+                }
+            }
+            else
+            {
+                PrintLine("Employee data not found!", 50, 25);
+                PressAnyKey(50, 26);
+            }
+        }
         static string YesNoChoice(string uCode)
         {
             PrintLine("Are you sure you want to delete " + uCode + " data?",50,30);
@@ -1815,7 +1872,7 @@ namespace BussinessApp
                 ticketPrice[i] = ticketPrice[i + 1];
             }
         }
-        static void UpdateUserData(string[] userName, string[] userID, string[] userIDPassword, string[] userCnic, string[] user2Cnic, string uCode, int userCountIdx, int user2CountIdx)
+        static void UpdateUserData(string[] userName, string[] userID, string[] userIDPassword, string[] userCnic, List<Employee> employees, string uCode, int userCountIdx)
         {
             PrintLine("Enter " + uCode + "ID: ",50,23);
             string ID = Inputs();
@@ -1830,7 +1887,7 @@ namespace BussinessApp
                 string option;
                 option = UpdateDataChoice();
                 string ind;
-                ind = UpdateData(userName, userCnic, user2Cnic, userCountIdx, user2CountIdx, idx, option);
+                ind = UpdateData(userName, userCnic, employees, userCountIdx, idx, option);
 
                 if (ind == "Y")
                 {
@@ -1844,6 +1901,37 @@ namespace BussinessApp
             else
             {
                 PrintStatement(uCode + "ID not found!", 50, 25, "W");
+            }
+        }
+        static void EmpUpdateUserData(string[] userCnic, List<Employee> employees, int userCountIdx)
+        {
+            PrintLine("Enter employeeID: ", 50, 23);
+            string ID = Inputs();
+
+            if (EmpUserCheck(ID, employees) == true)
+            {
+                int idx = EmpIndexCheck(ID, employees);
+
+                PrintLine("User Information", 50, 23);
+                EmpViewUserData(employees, idx, 15, 25);
+
+                string option;
+                option = UpdateDataChoice();
+                string ind;
+                ind = EmpUpdateData(userCnic, employees, userCountIdx, idx, option);
+
+                if (ind == "Y")
+                {
+                    PrintStatement("Employee data updated successfully!", 50, 29, " ");
+                }
+                else
+                {
+                    PrintStatement("Employee data not updated!", 50, 29, "W");
+                }
+            }
+            else
+            {
+                PrintStatement("EmployeeID not found!", 50, 25, "W");
             }
         }
         static string UpdateDataChoice()
@@ -1863,7 +1951,7 @@ namespace BussinessApp
             }
             return option;
         }
-        static string UpdateData(string[] userName, string[] userCnic, string[] user2Cnic, int userCountIdx, int user2countIdx, int index, string option)
+        static string UpdateData(string[] userName, string[] userCnic, List<Employee> employees, int userCountIdx, int index, string option)
         {
             if (option == "1")
             {
@@ -1876,10 +1964,36 @@ namespace BussinessApp
             }
             else if (option == "2")
             {
-                string newCnic = UserCnicSignup(userCnic, user2Cnic, userCountIdx, user2countIdx, 28);
-                if (UserCnicValidationSignup(newCnic, userCnic, user2Cnic, userCountIdx, user2countIdx) == true)
+                string newCnic = UserCnicSignup(userCnic, employees, userCountIdx, 28);
+                if (UserCnicValidationSignup(newCnic, userCnic, employees, userCountIdx) == true)
                 {
                     userCnic[index] = newCnic;
+                    return "Y";
+                }
+            }
+            else if (option == "3")
+            {
+                return " ";
+            }
+            return " ";
+        }
+        static string EmpUpdateData(string[] userCnic, List<Employee> employees, int userCountIdx, int index, string option)
+        {
+            if (option == "1")
+            {
+                string newName = UserNameSignUp(28);
+                if (UserNameValidationCheck(newName) == true)
+                {
+                    employees[index].employeeName = newName;
+                    return "Y";
+                }
+            }
+            else if (option == "2")
+            {
+                string newCnic = UserCnicSignup(userCnic, employees, userCountIdx, 28);
+                if (UserCnicValidationSignup(newCnic, userCnic, employees, userCountIdx) == true)
+                {
+                    employees[index].employeeCnic = newCnic;
                     return "Y";
                 }
             }
@@ -1912,12 +2026,42 @@ namespace BussinessApp
                 PressAnyKey(50, 28);
             }
         }
+        static void EmpViewUserDataList(List<Employee> employees)
+        {
+            PrintLine($"{"Name",-20}{"Cnic",-20}{"UserID",-20}{"Password",-20}", 36, 23);
+            if (employees.Count > 0)
+            {
+                int y = 25;
+
+                for (int idx = 0; idx < employees.Count; idx++)
+                {
+                    PrintLine($"{employees[idx].employeeName,-20}{employees[idx].employeeCnic,-20}{employees[idx].employeeID,-20}{employees[idx].employeeIDPassword,-20}", 36, y);
+                    y++;
+                }
+
+                PressAnyKey(50, y + 1);
+            }
+            else
+            {
+                PrintLine("No employeeID exists.", 36, 25);
+                PrintLine("Add employees to view data!", 36, 26);
+
+                PressAnyKey(50, 28);
+            }
+        }
         static void ViewUserData(string[] userName, string[] userID, string[] userIDPassword, string[] userCnic, int index, int x, int y)
         {
             PrintLine("Name: " + userName[index],x,y);
             PrintLine("UserID: " + userID[index],x,y+1);
             PrintLine("Password: " + userIDPassword[index],x,y+2);
             PrintLine("Cnic: " + userCnic[index],x,y+3);
+        }
+        static void EmpViewUserData(List<Employee> employees, int index, int x, int y)
+        {
+            PrintLine("Name: " + employees[index].employeeName, x, y);
+            PrintLine("UserID: " + employees[index].employeeID, x, y+1);
+            PrintLine("Password: " + employees[index].employeeIDPassword, x, y+2);
+            PrintLine("Cnic: " + employees[index].employeeCnic, x, y+3);
         }
         static void SearchUserData(string[] userName, string[] userID, string[] userIDPassword, string[] userCnic, string uCode, int userCountIdx)
         {
@@ -1937,6 +2081,24 @@ namespace BussinessApp
                 PrintStatement(uCode + " data not found!", 50, 25, "W");
             }
         }
+        static void EmpSearchUserData(List<Employee> employees)
+        {
+            PrintLine("Enter employeeID: ", 50, 23);
+            string ID;
+            ID=Inputs();
+
+            if (EmpUserCheck(ID, employees) == true)
+            {
+                int idx = EmpIndexCheck(ID, employees);
+
+                EmpViewUserData(employees, idx, 50, 25);
+                PressAnyKey(50, 30);
+            }
+            else
+            {
+                PrintStatement("Employee data not found!", 50, 25, "W");
+            }
+        }
         static string ChangePassword(string[] idPassword, int index)
         {
             string password;
@@ -1951,6 +2113,40 @@ namespace BussinessApp
                 if (validation == true && newPassword != password)
                 {
                     idPassword[index] = newPassword;
+                    PrintStatement("Password changed successfully!", 50, 26, " ");
+                    return newPassword;
+                }
+                else if (newPassword == password)
+                {
+                    PrintStatement("Existing password cannot be used! Password not changed!", 50, 26, "W");
+                    return " ";
+                }
+                else
+                {
+                    PrintStatement("Invalid Password format! Password not changed!", 50, 26, "W");
+                    return " ";
+                }
+            }
+            else
+            {
+                PrintStatement("Wrong credentials! Password not changed!", 50, 24, "W");
+                return " ";
+            }
+        }
+        static string EmpChangePassword(List<Employee> employees, int index)
+        {
+            string password;
+            PrintLine("Enter current password: ", 50, 23);
+            password = Inputs();
+            string newPassword;
+            if (password == employees[index].employeeIDPassword)
+            {
+                newPassword = UserPasswordSignup(25);
+                bool validation = PasswordValidationCheckSignup(newPassword);
+
+                if (validation == true && newPassword != password)
+                {
+                    employees[index].employeeIDPassword= newPassword;
                     PrintStatement("Password changed successfully!", 50, 26, " ");
                     return newPassword;
                 }
@@ -2425,26 +2621,26 @@ namespace BussinessApp
         }
 
         // employee file handeling functions
-        static void EmployeesNewDataFile(string[] employeeName, string[] employeeId, string[] employeeIDPassword, string[] employeeCnic, int employeeCountIdx)
+        static void EmployeesNewDataFile(List<Employee> employees)
         {
             StreamWriter employeeFile = new StreamWriter("employeeData.txt", true); // append mode
 
-            employeeFile.WriteLine($"{employeeName[employeeCountIdx - 1]};{employeeId[employeeCountIdx - 1]};{employeeIDPassword[employeeCountIdx - 1]};{employeeCnic[employeeCountIdx - 1]};;");
+            employeeFile.WriteLine($"{employees[employees.Count - 1].employeeName};{employees[employees.Count - 1].employeeID};{employees[employees.Count-1].employeeIDPassword};{employees[employees.Count-1].employeeCnic};;");
 
             employeeFile.Close();
         }
-        static void EmployeesDataUpdateFile(string[] employeeName, string[] employeeId, string[] employeeIDPassword, string[] employeeCnic, int employeeCountIdx)
+        static void EmployeesDataUpdateFile(List<Employee> employees)
         {
             StreamWriter employeeFile = new StreamWriter("employeeData.txt");
 
-            for (int i = 0; i < employeeCountIdx; i++)
+            for (int i = 0; i < employees.Count; i++)
             {
-                employeeFile.WriteLine($"{employeeName[i]};{employeeId[i]};{employeeIDPassword[i]};{employeeCnic[i]};;");
+                employeeFile.WriteLine($"{employees[i].employeeName};{employees[i].employeeID};{employees[i].employeeIDPassword};{employees[i].employeeCnic};;");
             }
 
             employeeFile.Close();
         }
-        static void EmployeeDataLoad(string[] employeeName, string[] employeeId, string[] employeeIDPassword, string[] employeeCnic,ref int employeeCountIdx)
+        static void EmployeeDataLoad(List<Employee> employees)
         {
 
             string line;
@@ -2455,17 +2651,16 @@ namespace BussinessApp
                 int j = 0;
                 if (line[line.Length - 1] == ';' && line[line.Length - 2] == ';' && line[line.Length - 16] == ';' && line[0] != ';')
                 {
-                    employeeName[i] = LoadUserAttribute(line, ref j);
+                    employees[i].employeeName = LoadUserAttribute(line, ref j);
                     j++;
-                    employeeId[i] = LoadUserAttribute(line, ref j);
+                    employees[i].employeeID = LoadUserAttribute(line, ref j);
                     j++;
-                    employeeIDPassword[i] = LoadUserAttribute(line, ref j);
+                    employees[i].employeeIDPassword = LoadUserAttribute(line, ref j);
                     j++;
-                    employeeCnic[i] = LoadUserAttribute(line, ref j);
+                    employees[i].employeeCnic = LoadUserAttribute(line, ref j);
                     i++;
                 }
             }
-            employeeCountIdx = i;
             employeeFile.Close();
         }
         
