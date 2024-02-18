@@ -1,0 +1,7 @@
+D:\Semester 2\OOP\OOP Lab\PD4\Task2\Task2\bin\Debug\Task2.exe.config
+D:\Semester 2\OOP\OOP Lab\PD4\Task2\Task2\bin\Debug\Task2.exe
+D:\Semester 2\OOP\OOP Lab\PD4\Task2\Task2\bin\Debug\Task2.pdb
+D:\Semester 2\OOP\OOP Lab\PD4\Task2\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
+D:\Semester 2\OOP\OOP Lab\PD4\Task2\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+D:\Semester 2\OOP\OOP Lab\PD4\Task2\Task2\obj\Debug\Task2.exe
+D:\Semester 2\OOP\OOP Lab\PD4\Task2\Task2\obj\Debug\Task2.pdb
