@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lab 10\\Challenge 5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|d:\\lab 10\\challenge 5\\challenge 5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|solutionrelative:challenge 5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|D:\\Lab 10\\Challenge 5\\challenge 5\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|solutionrelative:challenge 5\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|D:\\Lab 10\\Challenge 5\\challenge 5\\audi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|solutionrelative:challenge 5\\audi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|D:\\Lab 10\\Challenge 5\\challenge 5\\bmw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7168E91D-2111-4797-9396-FB0D28B0A6EA}|Challenge 5\\Challenge 5.csproj|solutionrelative:challenge 5\\bmw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AUDI.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 5\\Challenge 5\\AUDI.cs",
+              "RelativeDocumentMoniker": "Challenge 5\\AUDI.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 5\\Challenge 5\\AUDI.cs",
+              "RelativeToolTip": "Challenge 5\\AUDI.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T05:52:51.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BMW.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 5\\Challenge 5\\BMW.cs",
+              "RelativeDocumentMoniker": "Challenge 5\\BMW.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 5\\Challenge 5\\BMW.cs",
+              "RelativeToolTip": "Challenge 5\\BMW.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T05:30:37.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 5\\Challenge 5\\Car.cs",
+              "RelativeDocumentMoniker": "Challenge 5\\Car.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 5\\Challenge 5\\Car.cs",
+              "RelativeToolTip": "Challenge 5\\Car.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T05:26:34.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 5\\Challenge 5\\Program.cs",
+              "RelativeDocumentMoniker": "Challenge 5\\Program.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 5\\Challenge 5\\Program.cs",
+              "RelativeToolTip": "Challenge 5\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAxwBMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T05:26:23.602Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

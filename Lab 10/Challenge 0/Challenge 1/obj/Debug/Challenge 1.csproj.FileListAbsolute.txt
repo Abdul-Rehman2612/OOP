@@ -1,0 +1,7 @@
+D:\Lab 10\Challenge 1\Challenge 1\bin\Debug\Challenge 1.exe.config
+D:\Lab 10\Challenge 1\Challenge 1\bin\Debug\Challenge 1.exe
+D:\Lab 10\Challenge 1\Challenge 1\bin\Debug\Challenge 1.pdb
+D:\Lab 10\Challenge 1\Challenge 1\obj\Debug\Challenge 1.csproj.AssemblyReference.cache
+D:\Lab 10\Challenge 1\Challenge 1\obj\Debug\Challenge 1.csproj.CoreCompileInputs.cache
+D:\Lab 10\Challenge 1\Challenge 1\obj\Debug\Challenge 1.exe
+D:\Lab 10\Challenge 1\Challenge 1\obj\Debug\Challenge 1.pdb

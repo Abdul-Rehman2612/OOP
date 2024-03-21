@@ -1,0 +1,7 @@
+E:\uniwork\2nd semester\OOP\week10\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\uniwork\2nd semester\OOP\week10\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\uniwork\2nd semester\OOP\week10\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\uniwork\2nd semester\OOP\week10\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+E:\uniwork\2nd semester\OOP\week10\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\uniwork\2nd semester\OOP\week10\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\uniwork\2nd semester\OOP\week10\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

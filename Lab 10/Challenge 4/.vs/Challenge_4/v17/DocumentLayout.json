@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lab 10\\Challenge 4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|d:\\lab 10\\challenge 4\\bl\\savingaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|solutionrelative:bl\\savingaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|D:\\Lab 10\\Challenge 4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|D:\\Lab 10\\Challenge 4\\bl\\stundentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|solutionrelative:bl\\stundentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|D:\\Lab 10\\Challenge 4\\bl\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|solutionrelative:bl\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|D:\\Lab 10\\Challenge 4\\bl\\salaryaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49BA2ED4-54C2-4A3F-B296-99F5C1449A27}|Challenge_4.csproj|solutionrelative:bl\\salaryaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SavingAccount.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 4\\BL\\SavingAccount.cs",
+              "RelativeDocumentMoniker": "BL\\SavingAccount.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 4\\BL\\SavingAccount.cs",
+              "RelativeToolTip": "BL\\SavingAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T06:26:10.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 4\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 4\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T06:26:12.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StundentAccount.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 4\\BL\\StundentAccount.cs",
+              "RelativeDocumentMoniker": "BL\\StundentAccount.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 4\\BL\\StundentAccount.cs",
+              "RelativeToolTip": "BL\\StundentAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T06:26:12.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 4\\BL\\Account.cs",
+              "RelativeDocumentMoniker": "BL\\Account.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 4\\BL\\Account.cs",
+              "RelativeToolTip": "BL\\Account.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAnwBcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T06:26:12.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalaryAccount.cs",
+              "DocumentMoniker": "D:\\Lab 10\\Challenge 4\\BL\\SalaryAccount.cs",
+              "RelativeDocumentMoniker": "BL\\SalaryAccount.cs",
+              "ToolTip": "D:\\Lab 10\\Challenge 4\\BL\\SalaryAccount.cs",
+              "RelativeToolTip": "BL\\SalaryAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T06:26:12.48Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

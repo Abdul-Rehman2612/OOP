@@ -1,0 +1,7 @@
+D:\Lab 10\Challenge 5\Challenge 5\bin\Debug\Challenge 5.exe.config
+D:\Lab 10\Challenge 5\Challenge 5\bin\Debug\Challenge 5.exe
+D:\Lab 10\Challenge 5\Challenge 5\bin\Debug\Challenge 5.pdb
+D:\Lab 10\Challenge 5\Challenge 5\obj\Debug\Challenge 5.csproj.AssemblyReference.cache
+D:\Lab 10\Challenge 5\Challenge 5\obj\Debug\Challenge 5.csproj.CoreCompileInputs.cache
+D:\Lab 10\Challenge 5\Challenge 5\obj\Debug\Challenge 5.exe
+D:\Lab 10\Challenge 5\Challenge 5\obj\Debug\Challenge 5.pdb
