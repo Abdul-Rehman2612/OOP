@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UMS\\oop5Task1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|d:\\ums\\oop5task1\\oop5task1\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\ui\\studentui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\ui\\studentui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\ui\\degreeprogramui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\ui\\degreeprogramui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\dl\\studentcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\dl\\studentcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\bl\\degreeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\bl\\degreeprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\bl\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\bl\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\ui\\subjectui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\ui\\subjectui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\dl\\subjectcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\dl\\subjectcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|D:\\UMS\\oop5Task1\\oop5task1\\ui\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87210D98-2D0A-4AAF-A56A-F1B1C713A623}|oop5Task1\\oop5Task1.csproj|solutionrelative:oop5task1\\ui\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HC\\Downloads\\Code\\Code\\UI\\DegreeProgramUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\Program.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\Program.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\Program.cs",
+              "RelativeToolTip": "oop5Task1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentUi.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\StudentUi.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\ui\\StudentUi.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\StudentUi.cs",
+              "RelativeToolTip": "oop5Task1\\ui\\StudentUi.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenuUi.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\MainMenuUi.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\ui\\MainMenuUi.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\MainMenuUi.cs",
+              "RelativeToolTip": "oop5Task1\\ui\\MainMenuUi.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DegreeProgram.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\bl\\DegreeProgram.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\bl\\DegreeProgram.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\bl\\DegreeProgram.cs",
+              "RelativeToolTip": "oop5Task1\\bl\\DegreeProgram.cs",
+              "ViewState": "AQIAAAAAAABAZmZmZmYkwAwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\bl\\Subject.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\bl\\Subject.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\bl\\Subject.cs",
+              "RelativeToolTip": "oop5Task1\\bl\\Subject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DegreeProgramUI.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\DegreeProgramUI.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\ui\\DegreeProgramUI.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\DegreeProgramUI.cs",
+              "RelativeToolTip": "oop5Task1\\ui\\DegreeProgramUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentCrud.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\dl\\StudentCrud.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\dl\\StudentCrud.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\dl\\StudentCrud.cs",
+              "RelativeToolTip": "oop5Task1\\dl\\StudentCrud.cs",
+              "ViewState": "AQIAADIAAACAyczMzMwIwDUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SubjectCrud.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\dl\\SubjectCrud.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\dl\\SubjectCrud.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\dl\\SubjectCrud.cs",
+              "RelativeToolTip": "oop5Task1\\dl\\SubjectCrud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubjectUI.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\SubjectUI.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\ui\\SubjectUI.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\SubjectUI.cs",
+              "RelativeToolTip": "oop5Task1\\ui\\SubjectUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConsoleUtility.cs",
+              "DocumentMoniker": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\ConsoleUtility.cs",
+              "RelativeDocumentMoniker": "oop5Task1\\ui\\ConsoleUtility.cs",
+              "ToolTip": "D:\\UMS\\oop5Task1\\oop5Task1\\ui\\ConsoleUtility.cs",
+              "RelativeToolTip": "oop5Task1\\ui\\ConsoleUtility.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T05:12:20.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DegreeProgramUI.cs",
+              "DocumentMoniker": "C:\\Users\\HC\\Downloads\\Code\\Code\\UI\\DegreeProgramUI.cs",
+              "ToolTip": "C:\\Users\\HC\\Downloads\\Code\\Code\\UI\\DegreeProgramUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T05:51:56.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

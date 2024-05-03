@@ -1,0 +1,7 @@
+C:\Users\G3NZ\source\repos\Extend-Calculator\Extend-Calculator\obj\Debug\Extend-Calculator.csproj.AssemblyReference.cache
+C:\Users\G3NZ\source\repos\Extend-Calculator\Extend-Calculator\obj\Debug\Extend-Calculator.csproj.CoreCompileInputs.cache
+C:\Users\G3NZ\source\repos\Extend-Calculator\Extend-Calculator\bin\Debug\Extend-Calculator.exe.config
+C:\Users\G3NZ\source\repos\Extend-Calculator\Extend-Calculator\bin\Debug\Extend-Calculator.exe
+C:\Users\G3NZ\source\repos\Extend-Calculator\Extend-Calculator\bin\Debug\Extend-Calculator.pdb
+C:\Users\G3NZ\source\repos\Extend-Calculator\Extend-Calculator\obj\Debug\Extend-Calculator.exe
+C:\Users\G3NZ\source\repos\Extend-Calculator\Extend-Calculator\obj\Debug\Extend-Calculator.pdb

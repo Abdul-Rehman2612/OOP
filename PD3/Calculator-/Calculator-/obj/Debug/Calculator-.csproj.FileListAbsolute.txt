@@ -1,0 +1,14 @@
+C:\Users\G3NZ\source\repos\Calculator-\Calculator-\bin\Debug\Calculator-.exe.config
+C:\Users\G3NZ\source\repos\Calculator-\Calculator-\bin\Debug\Calculator-.exe
+C:\Users\G3NZ\source\repos\Calculator-\Calculator-\bin\Debug\Calculator-.pdb
+C:\Users\G3NZ\source\repos\Calculator-\Calculator-\obj\Debug\Calculator-.csproj.AssemblyReference.cache
+C:\Users\G3NZ\source\repos\Calculator-\Calculator-\obj\Debug\Calculator-.csproj.CoreCompileInputs.cache
+C:\Users\G3NZ\source\repos\Calculator-\Calculator-\obj\Debug\Calculator-.exe
+C:\Users\G3NZ\source\repos\Calculator-\Calculator-\obj\Debug\Calculator-.pdb
+D:\OOP\PD\PD3\Calculator-\Calculator-\bin\Debug\Calculator-.exe.config
+D:\OOP\PD\PD3\Calculator-\Calculator-\bin\Debug\Calculator-.exe
+D:\OOP\PD\PD3\Calculator-\Calculator-\bin\Debug\Calculator-.pdb
+D:\OOP\PD\PD3\Calculator-\Calculator-\obj\Debug\Calculator-.csproj.AssemblyReference.cache
+D:\OOP\PD\PD3\Calculator-\Calculator-\obj\Debug\Calculator-.csproj.CoreCompileInputs.cache
+D:\OOP\PD\PD3\Calculator-\Calculator-\obj\Debug\Calculator-.exe
+D:\OOP\PD\PD3\Calculator-\Calculator-\obj\Debug\Calculator-.pdb

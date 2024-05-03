@@ -1,0 +1,14 @@
+C:\LABS\oop\oop5\oop5Task1\oop5Task1\obj\Debug\oop5Task1.csproj.AssemblyReference.cache
+C:\LABS\oop\oop5\oop5Task1\oop5Task1\obj\Debug\oop5Task1.csproj.CoreCompileInputs.cache
+C:\LABS\oop\oop5\oop5Task1\oop5Task1\bin\Debug\oop5Task1.exe.config
+C:\LABS\oop\oop5\oop5Task1\oop5Task1\bin\Debug\oop5Task1.exe
+C:\LABS\oop\oop5\oop5Task1\oop5Task1\bin\Debug\oop5Task1.pdb
+C:\LABS\oop\oop5\oop5Task1\oop5Task1\obj\Debug\oop5Task1.exe
+C:\LABS\oop\oop5\oop5Task1\oop5Task1\obj\Debug\oop5Task1.pdb
+C:\Users\3 Stars Laptop\OneDrive\Desktop\UMS\oop5Task1\oop5Task1\bin\Debug\oop5Task1.exe.config
+C:\Users\3 Stars Laptop\OneDrive\Desktop\UMS\oop5Task1\oop5Task1\bin\Debug\oop5Task1.exe
+C:\Users\3 Stars Laptop\OneDrive\Desktop\UMS\oop5Task1\oop5Task1\bin\Debug\oop5Task1.pdb
+C:\Users\3 Stars Laptop\OneDrive\Desktop\UMS\oop5Task1\oop5Task1\obj\Debug\oop5Task1.csproj.AssemblyReference.cache
+C:\Users\3 Stars Laptop\OneDrive\Desktop\UMS\oop5Task1\oop5Task1\obj\Debug\oop5Task1.csproj.CoreCompileInputs.cache
+C:\Users\3 Stars Laptop\OneDrive\Desktop\UMS\oop5Task1\oop5Task1\obj\Debug\oop5Task1.exe
+C:\Users\3 Stars Laptop\OneDrive\Desktop\UMS\oop5Task1\oop5Task1\obj\Debug\oop5Task1.pdb
